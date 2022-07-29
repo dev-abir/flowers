@@ -1,0 +1,32 @@
+[
+    {
+        "model": "flowers_server_app.flower",
+        "pk": 1,
+        "fields": {
+            "image": "541px-Sunflower_sky_backdrop.jpg",
+            "title": "Sunflower",
+            "subtitle": "My first flower",
+            "description": "I have a sunflower plant in my garden."
+        }
+    },
+    {
+        "model": "flowers_server_app.flower",
+        "pk": 2,
+        "fields": {
+            "image": "640px-Hibiscus_Brilliant.jpg",
+            "title": "China rose",
+            "subtitle": "My second flower",
+            "description": "I have a China rose plant in my garden."
+        }
+    },
+    {
+        "model": "flowers_server_app.flower",
+        "pk": 3,
+        "fields": {
+            "image": "319px-Tagetes_erecta_chendumalli_chedi.jpg",
+            "title": "Marigold",
+            "subtitle": "My third flower",
+            "description": "I have a marigold plant in my garden."
+        }
+    }
+]
