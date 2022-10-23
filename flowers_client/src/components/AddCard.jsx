@@ -37,6 +37,9 @@ function AddCard(props) {
 
                     // convert image to Base64
                     reader.readAsDataURL(event.target.image.files[0]);
+                    // event.target.title.value = '';
+                    // event.target.subtitle.value = '';
+                    // event.target.description.value = '';
                 }}
             >
                 <FormGroup
