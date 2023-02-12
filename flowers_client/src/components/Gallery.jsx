@@ -3,6 +3,8 @@ import FlowerCard from "./FlowerCard";
 import AddCard from "./AddCard";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
+const URL_BASE = process.env.REACT_APP_URL_BASE || "http://localhost:8000/";
+
 const ErrorModal = (props) => {
     return (
         <Modal isOpen={props.showErrorModal} toggle={props.toggleModalFunc}>
@@ -31,7 +33,7 @@ function Gallery() {
     const [errorModalJSON, setErrorModalJSON] = useState("");
 
     useEffect(() => {
-        fetch("http://127.0.0.1:8000/flowers/")
+        fetch(`${URL_BASE}flowers/`)
             .then((res) => res.json())
             .then((data) => setFlowers(data));
     }, []);
@@ -42,7 +44,7 @@ function Gallery() {
     }, [flowers]);
 
     const addCard = (imageBase64, cardTitle, cardSubtitle, cardDescription) => {
-        fetch("http://127.0.0.1:8000/flowers/", {
+        fetch(`${URL_BASE}flowers/`, {
             body: JSON.stringify({
                 image: imageBase64,
                 title: cardTitle,
