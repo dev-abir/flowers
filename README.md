@@ -8,6 +8,7 @@ A simple flowers gallery application.
 
 -   Enter into the `flowers_server` directory (`cd flowers_server`)
 -   Setup a virtual environment (virtualenv, venv etc)
+-   Create a `.env` file to put the `SECRET_KEY`, or else just declare a `SECRET_KEY` environment variable.
 -   Install the dependencies using `pip install -r requirements.txt`
 -   Run `python manage.py migrate`
 -   Create a `media` folder, and copy the contents of `demo_media` folder into `media` folder.
