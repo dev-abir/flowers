@@ -18,7 +18,7 @@ A simple flowers gallery application.
 -   Get back to the source code root folder `cd ..`
 
 -   Enter into the `flowers_client` directory (`cd flowers_client`)
--   Set `REACT_APP_URL_BASE` environment variable to store the django REST API base URL.
+-   In production, set `REACT_APP_URL_BASE` environment variable to store the django REST API base URL.
 -   Run `npm i`, then run `npm run start`
 -   Go to http://localhost:3000/ in your browser.
 
